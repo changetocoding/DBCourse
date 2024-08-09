@@ -28,5 +28,20 @@ Sql setup
 4. Create new project: Make sure .net core console app. Add Entityframework nuget package (make sure entity framework core one)
 5. Crack on
 
-In sql server mgt server was [ComputerName]\SQLEXPRESS
-My connection string was "Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;"
+
+
+## Setup LocalDB
+[Microsoft guide](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver15)
+1. Install using link above or through the Visual Studio Installer, as part of the ASP.NET and web development workload, or as an individual component.
+2. It should automatically be running. If it isn't you can start it by running in command prompt
+```
+SqlLocalDB start MSSQLLocalDB
+```
+3. Connect to it via SQL Server.    
+Server name: (localdb)\MSSQLLocalDB  
+Authentication: Windows Authentication
+4. Create a new database in SQL Server
+5. Run database setup script (to be provided by a colleague)
+
+Please note that depending on the version you download and install your server name may differ (in step 3, (localdb)\MSSQLLocalDB may be something else like (localhost)\SQLEXPRESS)
+
