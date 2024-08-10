@@ -34,6 +34,7 @@ Manipulating data:
 - Indexes, unique
 - Update statement
 - delete statement
+- Add/Remove columns
 
 Advance topics
 - Triggers
