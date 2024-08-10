@@ -20,6 +20,8 @@ Manipulating data:
 - Update statement
 - delete statement
 
+'CRUD' operations - Create, Read, Update, Delete
+
 ## Setup
 Sql setup
 
