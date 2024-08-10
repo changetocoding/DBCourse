@@ -14,7 +14,7 @@ Querying:
 - Select with a limit
 - where
   - ... in
-  - >,<, equals like
+  - `>,<, equals like`
 - Order by
 - Joins (Left, Right, inner, outer)
 - Group by & Aggregate functions
