@@ -35,6 +35,8 @@ Manipulating data:
 - delete statement
 
 Advance topics
+- Triggers
+- Stored Procedures
 - 
 
 
