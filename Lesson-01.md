@@ -11,6 +11,7 @@ Databases:
 
 Querying:
 - Select
+   - Select as,  
 - Select with a limit
 - where
   - ... in
