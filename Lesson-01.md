@@ -6,7 +6,7 @@
 Databases:
 - 'CRUD' operations - Create, Read, Update, Delete
 - Normal forms
-- Schemas
+- db server, database, Schemas, tables, 
 - ER diagrams
 
 Querying:
