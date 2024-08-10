@@ -31,7 +31,7 @@ Manipulating data:
 - primary keys
 - When not to use primary keys
 - Constraints
-- Indexes
+- Indexes, unique
 - Update statement
 - delete statement
 
