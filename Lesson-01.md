@@ -11,7 +11,7 @@ Databases:
 
 Querying:
 - Select
-   - Select as,  
+   - `as` (useful with joins)
 - Select with a limit
 - where
   - ... in
