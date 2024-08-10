@@ -10,6 +10,7 @@ Querying:
 - joins
 - Group by & Aggregate functions
 - Having clause
+- Query within query
 
 Manipulating data:
 - Creating tables
