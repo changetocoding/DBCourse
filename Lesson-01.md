@@ -14,6 +14,7 @@ Querying:
 Manipulating data:
 - Creating tables
 - primary keys
+- When not to use primary keys
 - constraints
 - Indexes
 - Update statement
