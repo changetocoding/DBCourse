@@ -3,25 +3,41 @@
 
 ## Current knowledge
 
+Databases:
+- 'CRUD' operations - Create, Read, Update, Delete
+- Normal forms
+- Schemas
+- ER diagrams
+
 Querying:
 - Select
 - Select with a limit
+- where
+  - ... in
+  - >,<, equals like
 - Order by
-- joins
+- Joins (Left, Right, inner, outer)
 - Group by & Aggregate functions
 - Having clause
 - Query within query
 
+
 Manipulating data:
 - Creating tables
+- Data types
+- Creating schemas
+- Views
 - primary keys
 - When not to use primary keys
-- constraints
+- Constraints
 - Indexes
 - Update statement
 - delete statement
 
-'CRUD' operations - Create, Read, Update, Delete
+Advance topics
+- 
+
+
 
 ## Setup
 Sql setup
