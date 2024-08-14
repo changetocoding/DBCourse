@@ -10,8 +10,9 @@
 
 ### Querying:
 - Select
-   - `as` (useful with joins)
-- Select with a limit
+   - `as` (useful with joins) - 'Rename column to something useful'
+- Select with a limit  - 'Give me top ...'
+- Select distinct (with multiple columns too) -> 'How many distinct combinations are there?'
 - where
   - ... in
   - `>,<, equals like`
