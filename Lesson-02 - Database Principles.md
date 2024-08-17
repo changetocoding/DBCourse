@@ -37,9 +37,10 @@ _PK_ is primary key
 
 Solve it by separating category into separate table
 
-** Book **
+**Book**
+
 |_Title_| Author| Pages|Author Nationality| _Format_ | Price|
------------------------------------------------------
+|-------|-------|-------|------------------|--------|------|
 |DB Rules|John Doe| 500| British | Hardcover | 49.99|
 
 
