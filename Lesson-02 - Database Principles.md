@@ -87,6 +87,9 @@ Can add a Price table
 
 Author nationality depends on author, not the key (Title)
 
+## ER diagrams
+https://www.lucidchart.com/pages/er-diagrams
+
 
 **Book**
 |_Title_| Author| Pages|
@@ -103,3 +106,10 @@ Author nationality depends on author, not the key (Title)
 
 **We are done**
 
+
+## Homework
+
+1. Read up more on acid
+2. Practise Normal forms
+   - https://cs-uob.github.io/COMS10012/exercises/part1/db2/normalforms.html
+   - http://phlonx.com/resources/nf3/
