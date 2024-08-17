@@ -32,7 +32,7 @@ In the first normal form each field contains a single value. A field may not con
 _PK_ is primary key
 
 | _Title_ | Author | Category | Pages | Author Nationality | _Format_ | Price |  
------------------------------------------------------
+|-------|-------|-------|-------------|--------------------|--------|------|
 | DB Rules |John Doe| Database, IT, SQL | 500 | British | Hardcover | 49.99 |  
 
 Solve it by separating category into separate table
@@ -47,7 +47,7 @@ Solve it by separating category into separate table
 
 **Category**
 | _Title_ | _Category_ |
-----------------------
+|----------|------------|
 | DB Rules | Database |
 | DB Rules | IT |
 | DB Rules | SQL |
@@ -62,7 +62,7 @@ A relation (or table) is in 2NF if:
 In this case price only depends on format:
 
 |_Title_| Author| Pages|Author Nationality| _Format_ | Price|
------------------------------------------------------
+|-------|-------|-------|------------------|--------|------|
 |DB Rules|John Doe| 500| British | Hardcover | 49.99|
 |DB Rules|John Doe| 500| British | Paperback | 19.99|
 |Models of DB|Peter Coulson| 200| German |Hardcover | 39.99|
@@ -70,13 +70,13 @@ In this case price only depends on format:
 Can add a Price table
 **Book**
 |_Title_| Author| Pages|Author Nationality|
-------------------------------------------
+|-------|-------|------|------------------|
 |DB Rules|John Doe| 500|  British |
 |Models of DB|Peter Coulson| 200| German |
 
 **Price**
 |_Title_| _Format_ | Price |
-----------------------------
+|----------|-----|-------|
 |DB Rules| Hardcover | 49.99|
 |DB Rules| Paperback | 19.99|
 |Models of DB| Hardcover | 39.99|
@@ -88,13 +88,13 @@ Can add a Price table
 Author nationality depends on author, not the key (Title)
 **Book**
 |_Title_| Author| Pages|
-------------------------
+|----------|-----|-------|
 |DB Rules|John Doe| 500|
 |Models of DB|Peter Coulson| 200|
 
 **Author**
 | _Author_| Author Nationality|
--------------------------------
+|----------|------------|
 |John Doe|  British |
 |Peter Coulson|  German |
 
