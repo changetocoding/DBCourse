@@ -113,3 +113,4 @@ https://www.lucidchart.com/pages/er-diagrams
 2. Practise Normal forms
    - https://cs-uob.github.io/COMS10012/exercises/part1/db2/normalforms.html
    - http://phlonx.com/resources/nf3/
+3. Draw an ER diagram for one of NFs you create.
