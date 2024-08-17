@@ -27,8 +27,8 @@ In the first normal form each field contains a single value. A field may not con
 
 _PK_ is primary key
 
-|_Title_| Author |Category| Pages| Author Nationality | _Format_ | Price|
-|DB Rules|John Doe| Database, IT, SQL|500| British | Hardcover | 49.99|
+| _Title_ | Author | Category | Pages | Author Nationality | _Format_ | Price |
+| DB Rules |John Doe| Database, IT, SQL | 500 | British | Hardcover | 49.99 |
 
 Solve it by separating category into separate table
 
