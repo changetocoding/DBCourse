@@ -38,11 +38,9 @@ _PK_ is primary key
 Solve it by separating category into separate table
 
 **Book**
-
 |_Title_| Author| Pages|Author Nationality| _Format_ | Price|
 |-------|-------|-------|------------------|--------|------|
 |DB Rules|John Doe| 500| British | Hardcover | 49.99|
-
 
 
 **Category**
@@ -68,6 +66,8 @@ In this case price only depends on format:
 |Models of DB|Peter Coulson| 200| German |Hardcover | 39.99|
 
 Can add a Price table
+
+
 **Book**
 |_Title_| Author| Pages|Author Nationality|
 |-------|-------|------|------------------|
@@ -86,6 +86,8 @@ Can add a Price table
 "[every] non-key [attribute] must provide a fact about the key, the whole key, and nothing but the key so help me Codd"
 
 Author nationality depends on author, not the key (Title)
+
+
 **Book**
 |_Title_| Author| Pages|
 |----------|-----|-------|
