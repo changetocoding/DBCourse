@@ -2,7 +2,7 @@
 - Select
    - `as` (useful with joins) - 'Rename column to something useful'
    - Comma's important between column names
-   - *
+   - `select *`
 - Select with a limit  - 'Give me top ...'
 - Select distinct (with multiple columns too) -> 'How many distinct combinations are there?'
 - where
