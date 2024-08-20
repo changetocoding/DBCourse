@@ -1,0 +1,18 @@
+# Lesson content
+- Select
+   - `as` (useful with joins) - 'Rename column to something useful'
+   - Comma's important between column names
+   - *
+- Select with a limit  - 'Give me top ...'
+- Select distinct (with multiple columns too) -> 'How many distinct combinations are there?'
+- where
+  - ... in
+  - `>,<, equals, like`
+  - `Is (not) null`
+  - `<>`
+- Order by
+- Joins (Left, Right, inner, outer)
+- Group by & Aggregate functions
+- Partion by (https://www.sqlshack.com/sql-partition-by-clause-overview/)
+- Having clause
+- Query within query
