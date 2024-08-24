@@ -21,15 +21,16 @@
 
 > IMPORTANT: sql is case insensitive
 
-
-## Select
-
-### Format for select statement
+### Format for a query
 ```sql
 SELECT ...
 FROM ...
 WHERE ...
 ```
+
+## Select
+
+
 
 We can use * to select all the columns
 ```sql
