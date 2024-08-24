@@ -18,6 +18,8 @@
 - Query within query
 
 
+> IMPORTANT: sql is case insensitive
+
 
 ## Select
 Format for select statement
@@ -46,5 +48,8 @@ from Orders
 - The `as` keyword can be used to rename a column
 - `[]` allows us to 'escape' the text (for example to add spaces)
 
-
-#
+We can limit the results to the first n results. The way to do this varies by database so check for your database. SqlServer:
+```
+SELECT TOP (1000) [CustomerID] ,[CompanyName],[ContactName]
+  FROM [dbo].[Customers]
+```
