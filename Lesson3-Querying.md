@@ -78,7 +78,7 @@ from customers
 
 ### Combining columns
 We can also do stuff like addition etc
-```
+```sql
 SELECT  [OrderID]
       ,[ProductID]
       ,[UnitPrice]
@@ -94,6 +94,16 @@ SELECT '(' + [ContactTitle] + ') ' + [ContactName]
   FROM [Customers]
 ```
 ![image](https://github.com/user-attachments/assets/673f81a8-a6ca-4100-b200-9bfddcb3dcee)
+
+## FROM
+dbo is the default schema. Don't need to specify it. With other schemas you need to specify the schema
+```sql
+SELECT TOP (1000) [CategoryID]
+      ,[CategoryName]
+      ,[Description]
+      ,[Picture]
+  FROM [dbo].[Categories]
+```
 
 ## Where
 Where allows you to filter the results
@@ -217,3 +227,11 @@ order by freight desc
 ```
 ![image](https://github.com/user-attachments/assets/ed0eaab1-dc9c-4dae-b55a-6238ef4507f7)
 
+### Homework
+
+    Get all columns from the tables Customers, Orders and Suppliers
+    Get all Customers alphabetically, by Country and name
+    Get all Orders by date
+    Get the count of all Orders made during 1997
+    Get the names of all the contact persons where the person is a manager, alphabetically
+    Get all orders placed on the 19th of May, 1997
