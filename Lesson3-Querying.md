@@ -34,16 +34,17 @@ from Orders
 ```
 
 Otherwise we must specify the columns. 
-- The comma `,` is important between the fields.
-- The `as` keyword can be used to rename a column
-- `[]` allows us to 'escape' the text (for example to add spaces)
 ```
 select [OrderID]
       ,[ShipName]
       ,[ShipAddress] as [Address To Ship To]
 from Orders
 ```
+![image](https://github.com/user-attachments/assets/f5f252f4-08cc-49b2-bb1d-df4a61e6a2ab)
 
+- The comma `,` is important between the fields.
+- The `as` keyword can be used to rename a column
+- `[]` allows us to 'escape' the text (for example to add spaces)
 
 
 #
