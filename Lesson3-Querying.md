@@ -16,3 +16,9 @@
 - Partion by (https://www.sqlshack.com/sql-partition-by-clause-overview/)
 - Having clause
 - Query within query
+
+
+
+## Select
+
+#
