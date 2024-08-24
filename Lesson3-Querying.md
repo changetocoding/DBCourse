@@ -1,4 +1,5 @@
-# Lesson content
+# Querying a Single Table
+### Lesson content
 - Select
    - `as` (useful with joins) - 'Rename column to something useful'
    - Comma's important between column names
@@ -11,11 +12,7 @@
   - `Is (not) null`
   - `<>`
 - Order by
-- Joins (Left, Right, inner, outer)
-- Group by & Aggregate functions
-- Partion by (https://www.sqlshack.com/sql-partition-by-clause-overview/)
-- Having clause
-- Query within query
+
 
 ### Case insensitive
 
@@ -96,6 +93,13 @@ SELECT '(' + [ContactTitle] + ') ' + [ContactName]
 ```
 ![image](https://github.com/user-attachments/assets/673f81a8-a6ca-4100-b200-9bfddcb3dcee)
 
+You can also use the concat keyword to join strings `CONCAT(FirstName, ' ', LastName)`
+```sql
+SELECT  FirstName
+       ,LastName
+       ,CONCAT(FirstName, ' ', LastName) AS FullName
+  FROM Employees;
+```
 ## FROM
 dbo is the default schema. Don't need to specify it. With other schemas you need to specify the schema
 ```sql
@@ -259,6 +263,9 @@ Setup sql server and databases using instructions here: https://github.com/chang
 - What are the different city and country combinations that were shipped to in 1998
 - Which orders were delivered late to Sweden
 - Get all orders placed on the 19th of May, 1997
+- Find all orders that were shipped to a South American country
+- Find all suppliers whose contact title is not 'Marketing Manager'
+- Find the names and hire dates for all US sales representatives
 
 ### Pubs db
 - select only the first 10 rows from the authors table
