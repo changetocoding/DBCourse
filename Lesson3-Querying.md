@@ -20,5 +20,30 @@
 
 
 ## Select
+Format for select statement
+```
+Select ...
+from ...
+where ...
+```
+
+We can use * to select all the columns
+```
+select *
+from Orders
+```
+
+Otherwise we must specify the columns. 
+- The comma `,` is important between the fields.
+- The `as` keyword can be used to rename a column
+- `[]` allows us to 'escape' the text (for example to add spaces)
+```
+select [OrderID]
+      ,[ShipName]
+      ,[ShipAddress] as [Address To Ship To]
+from Orders
+```
+
+
 
 #
