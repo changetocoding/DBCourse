@@ -128,6 +128,16 @@ AND  City = 'Bruxelles'
 ```
 ![image](https://github.com/user-attachments/assets/639fde81-0720-4336-8939-40cb2b8be0c1)
 
+You can use brackets 
+```sql
+  SELECT *
+  FROM [Order Details]
+  where (quantity = 1
+  or quantity > 100)
+  and discount > 0
+```
+Try without brackets and see what get
+
 Normally tables have an id field (e.g. `customerID`) which is useful for selecting a precise row you are looking form
 ```sql
 SELECT *
