@@ -17,6 +17,7 @@
 - Having clause
 - Query within query
 
+### Case insensitive
 
 > IMPORTANT: sql is case insensitive
 
