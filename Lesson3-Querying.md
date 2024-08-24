@@ -238,5 +238,35 @@ order by freight desc
 ```
 ![image](https://github.com/user-attachments/assets/ed0eaab1-dc9c-4dae-b55a-6238ef4507f7)
 
-### Homework
 
+## Homework
+
+Setup sql server and databases using instructions here: https://github.com/changetocoding/DBCourse/blob/main/Lesson-01.md#install-databases
+
+
+### Northwind
+- Get all columns from the tables Customers, Orders and Suppliers
+- Get all Customers alphabetically, by Country and name
+- Get the names of all the contact persons where the person is a manager, alphabetically
+- Get all employees who are Sales Representative
+- Select what the total money we can make from each product in stock  (use unit price and units in stock)
+- On order details get the total price for the order including the discount they get
+- Get the full address on the orders table (name, address, city, country, postalcode)
+- Join a customer name & title e.g. Mr Tom Smith
+- All order details that have discount
+- All Suppliers which company name begins with L
+- All customers whose name contains 'bel'
+- What are the different city and country combinations that were shipped to in 1998
+- Which orders were delivered late to Sweden
+- Get all orders placed on the 19th of May, 1997
+
+### Pubs db
+- select only the first 10 rows from the authors table
+- Order the publishers table by publisher name. pub_name is not a descriptive name of the column. Rename it to something better
+- What are the different payment terms you can have on the sales table
+- What is the most expensive book on the titles table
+- For each book what is the total revenue from the book (price * ytd_sales)
+- What is the full name for each employee
+- Order jobs by max level then by minimum level
+
+### Research groupby & having keywords
