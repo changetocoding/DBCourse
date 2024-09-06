@@ -5,9 +5,8 @@ Last week lesson focused on querying one table. This week we'll look at querying
 
 - Group by & Aggregate functions
 - Partion by (https://www.sqlshack.com/sql-partition-by-clause-overview/)
-
-- Joins (Left, Right, inner, outer)
 - Having clause
+- Joins (Left, Right, inner, outer)
 - Query within query
 
 ## Aggregate functions
@@ -158,7 +157,6 @@ INNER JOIN [orders] o on c.CustomerID = o.CustomerID
 
 ### Left JOIN
 Always contains all rows of the "left" table (A), even if the join-condition does not find any matching row in the "right" table (B)
-![SQL_Join_-_01_A_Left_Join_B svg](https://github.com/user-attachments/assets/93495f52-cd5d-4e12-a4ec-c00ed843cf0a)
 
 ```sql
 select * 
@@ -171,7 +169,27 @@ where o.shipCountry = 'Belgium'
 > Right outer join is the same but the key table is the second table
 > Also called a left/Right outer join
 
+### Union
+Rarely use but useful to know
+```sql
+SELECT City, CompanyName, ContactName, 'Customers' AS Relationship 
+FROM Customers
+UNION SELECT City, CompanyName, ContactName, 'Suppliers'
+FROM Suppliers
+```
+
 
 ### Homework
+Northwinds:
 1. Which products have been ordered and shipped to Belgium (i.e what products do we sell in belgium)
-2. 
+2. Create an alphabetical list of products. Include the category name for each product
+3. Find all Products above the average product price
+4. Join orders details and Products table so we have the product name for every row on the orders details table
+5. What is the total units on order for each supplier. Display as supplier name, total units on order
+Pubs:
+1. Display a list containing each employees first name, last name and job title
+2. Using only the `[sales]` table, get the Total quantity of sales for each stor_id
+3. What is the average price for each type of book
+4. Who wrote the book 'Prolonged Data Deprivation: Four Case Studies'
+5. Display a list of book titles with the name of the author. Where a book has multiple authors have a new line for each author (aka book title is repeated)
+6. 
