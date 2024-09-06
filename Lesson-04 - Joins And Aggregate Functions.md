@@ -113,19 +113,28 @@ Is equivalent to a group by on:
 | Green    | Forrest   |
 
 
+## Nested queries: Query within a query
+We can use a query within the where clause. For example:
+
+Get me the details of orders which are shipped to belgium:
+```sql
+select * 
+from dbo.[Order Details]
+where OrderID in (
+	select OrderID
+	from dbo.Orders
+	where shipCountry = 'Belgium'
+)
+```
+
 ## Joins - Working with multiple table
 So far only focused on one table but as covered in relational lesson tables normally related to other tables and you have to join them to get information
+
+We use a venn diagram to describe joins Venn
 
 ![Visual_SQL_JOINS_orig-1842961435](https://github.com/user-attachments/assets/3dfd1865-a7ca-4366-a54f-24d8065dbfd8)
 
 ![sqlJoins_7-2030296519](https://github.com/user-attachments/assets/04b82a53-1d1e-4d99-94dc-95bca4e8baee)
-
-We use a venn diagram to describe joins Venn
-https://en.wikipedia.org/wiki/Venn_diagram
-
-- Joins (Left, Right, inner, outer)
-- Having clause
-- Query within query
 
 ### Cross joins
 You'll never use. Cartesian product of rows from tables in the join. In other words, it will produce rows which combine each row from the first table with each row from the second table
@@ -151,9 +160,18 @@ INNER JOIN [orders] o on c.CustomerID = o.CustomerID
 Always contains all rows of the "left" table (A), even if the join-condition does not find any matching row in the "right" table (B)
 ![SQL_Join_-_01_A_Left_Join_B svg](https://github.com/user-attachments/assets/93495f52-cd5d-4e12-a4ec-c00ed843cf0a)
 
+```sql
+select * 
+from dbo.Orders o 
+left join dbo.[Order Details] od on o.OrderID = od.OrderID
+where o.shipCountry = 'Belgium'
+```
+
 > [!NOTE]
 > Right outer join is the same but the key table is the second table
 > Also called a left/Right outer join
 
 
-
+### Homework
+1. Which products have been ordered and shipped to Belgium (i.e what products do we sell in belgium)
+2. 
