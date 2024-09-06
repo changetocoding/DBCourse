@@ -33,6 +33,9 @@ SELECT CustomerID, count(*) as [No of orders]
 > [!NOTE]
 > In the select you're only allowed to use aggregate functions or fields in the group by. You'll get a `Column 'Orders.OrderID' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
 ` error instead
+
+
+> [!NOTE]
 > can do `count(*)` or `count(CustomerID)`. They are equivalent (ish)
 
 ### 
