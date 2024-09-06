@@ -186,6 +186,8 @@ Northwinds:
 3. Find all Products above the average product price
 4. Join orders details and Products table so we have the product name for every row on the orders details table
 5. What is the total units on order for each supplier. Display as supplier name, total units on order
+
+   
 Pubs:
 1. Display a list containing each employees first name, last name and job title
 2. Using only the `[sales]` table, get the Total quantity of sales for each stor_id
