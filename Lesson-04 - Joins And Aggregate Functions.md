@@ -137,7 +137,7 @@ We use a venn diagram to describe joins Venn
 
 ### Cross joins
 You'll never use. Cartesian product of rows from tables in the join. In other words, it will produce rows which combine each row from the first table with each row from the second table
-```
+```sql
 SELECT *
 FROM [Orders], [Customers];
 -- OR
@@ -147,7 +147,7 @@ FROM [Orders] cross join [Customers];
 
 ### Inner join
 Returns only what is on both tables
-```
+```sql
 SELECT *
 FROM [Customers] c
 INNER JOIN [orders] o on c.CustomerID = o.CustomerID
