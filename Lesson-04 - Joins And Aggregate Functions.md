@@ -113,7 +113,7 @@ Is equivalent to a group by on:
 
 
 ## Nested queries: Query within a query
-We can use a query within the where clause. For example:
+We can use a query within the where clause or a from clause. For example:
 
 Get me the details of orders which are shipped to belgium:
 ```sql
@@ -124,6 +124,17 @@ where OrderID in (
 	from dbo.Orders
 	where shipCountry = 'Belgium'
 )
+```
+
+With a from clause you need to name the inner query using the `as` keyword
+```sql
+select *
+from (
+	select shipCountry, Sum(Freight) as [Total Freight]
+	from dbo.Orders
+	group by shipCountry
+) as [Belgian]
+where [Total Freight] > 1000;
 ```
 
 ## Joins - Working with multiple table
